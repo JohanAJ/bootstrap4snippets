@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="Bootstrap4Snippets.335fa0bb-d8ce-4abe-87c6-0d11a1ae56f7" Version="1.0" Language="en-US" Publisher="Johan Visagie" />
-        <DisplayName>Bootstrap4Snippets</DisplayName>
-        <Description>Empty VSIX Project.</Description>
+        <Identity Id="Bootstrap4Snippets.335fa0bb-d8ce-4abe-87c6-0d11a1ae56f7" Version="1.0.0" Language="en-US" Publisher="Johan Visagie" />
+        <DisplayName>Bootstrap 4 Snippets</DisplayName>
+        <Description xml:space="preserve">A collection of Bootstrap 4 snippets for Visual studio</Description>
+        <MoreInfo>https://github.com/JohanAJ/bootstrap4snippets</MoreInfo>
+        <License>LICENSE.txt</License>
+        <Tags>snippets, bootstrap, html, javascript, web</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="Bootstrap4Snippet.pkgdef" />
