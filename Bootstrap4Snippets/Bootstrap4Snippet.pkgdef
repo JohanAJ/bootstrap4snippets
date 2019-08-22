@@ -1,0 +1,7 @@
+﻿// HTML
+[$RootKey$\Languages\CodeExpansions\HTML\Paths]
+"Bootstrap4HTML"="$PackageFolder$\Snippets\HTML\Bootstrap 4"
+
+// JavaScript
+[$RootKey$\Languages\CodeExpansions\JavaScript\Paths]
+"Bootstrap4JavaScript"="$PackageFolder$\Snippets\JavaScript\Bootstrap 4"

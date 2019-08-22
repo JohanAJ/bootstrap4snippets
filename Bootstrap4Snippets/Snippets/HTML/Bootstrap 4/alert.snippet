@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Alert</Title>
+      <Author>Johan Visagie</Author>
+      <Description>Provide contextual feedback message.</Description>
+      <Shortcut>b4-alert</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>The content for the alert</ToolTip>
+          <Default><![CDATA[A simple primary alert—check it out!]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML">
+        <![CDATA[<div class="alert alert-primary" role="alert">
+  $content$
+</div>$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

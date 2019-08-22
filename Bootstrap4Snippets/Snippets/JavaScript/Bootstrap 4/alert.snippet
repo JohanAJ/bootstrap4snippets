@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Alert</Title>
+      <Author>Johan Visagie</Author>
+      <Description>Enable dismissal of an alert via JavaScript</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Shortcut>b4alert</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>selector</ID>
+          <ToolTip>Selector of alert elements</ToolTip>
+          <Default><![CDATA[.alert]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript" Delimiter="%">
+        <![CDATA[$('%selector%').alert()%end%]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

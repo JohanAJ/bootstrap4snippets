@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Breadcrumb</Title>
+      <Author>Johan Visagie</Author>
+      <Description>Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Shortcut>b4-breadcrumb</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>pagehref</ID>
+          <ToolTip>URL of the link</ToolTip>
+          <Default><![CDATA[#]]></Default>
+        </Literal>
+        <Literal>
+          <ID>pagecontent</ID>
+          <ToolTip>Content of the link</ToolTip>
+          <Default><![CDATA[Home]]></Default>
+        </Literal>
+        <Literal>
+          <ID>libcontent</ID>
+          <ToolTip>Current page name</ToolTip>
+          <Default><![CDATA[Library]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML">
+        <![CDATA[<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="$pagehref$">$pagecontent$</a></li>
+    <li class="breadcrumb-item active" aria-current="page">$libcontent$</li>
+  </ol>
+</nav>$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

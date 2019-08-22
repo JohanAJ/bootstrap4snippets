@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+	xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Alert Dismiss-able</Title>
+      <Author>Johan Visagie</Author>
+      <Description>Provide contextual feedback message that the user can dismiss.</Description>
+      <Shortcut>b4-alert-dismiss</Shortcut>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>content</ID>
+          <ToolTip>The content for the alert</ToolTip>
+          <Default><![CDATA[<strong>Note!</strong> Please take note of the following.]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML">
+        <![CDATA[<div class="alert alert-primary alert-dismissible" role="alert">
+  $content$
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
