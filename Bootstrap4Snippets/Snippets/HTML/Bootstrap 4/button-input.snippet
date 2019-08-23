@@ -3,24 +3,24 @@
   xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>Alert</Title>
+      <Title>Button Input</Title>
       <Author>Johan Visagie</Author>
-      <Description>Enable dismissal of an alert via JavaScript.</Description>
+      <Description>An input Bootstrap button.</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Shortcut>b4Alert</Shortcut>
+      <Shortcut>b4-button-input</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>selector</ID>
-          <ToolTip>Selector of alert elements</ToolTip>
-          <Default><![CDATA[.alert]]></Default>
+          <ID>content</ID>
+          <ToolTip>Content of the button</ToolTip>
+          <Default><![CDATA[Primary]]></Default>
         </Literal>
       </Declarations>
-      <Code Language="JavaScript" Delimiter="%">
-        <![CDATA[$('%selector%').alert()%end%]]>
+      <Code Language="HTML">
+        <![CDATA[<input class="btn btn-primary" type="button" value="$content$">$end$]]>
       </Code>
     </Snippet>
   </CodeSnippet>

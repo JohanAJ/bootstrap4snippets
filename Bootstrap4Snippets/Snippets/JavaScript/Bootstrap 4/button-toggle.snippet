@@ -3,24 +3,24 @@
   xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>Alert</Title>
+      <Title>Button Toggle</Title>
       <Author>Johan Visagie</Author>
-      <Description>Enable dismissal of an alert via JavaScript.</Description>
+      <Description>Toggles push state. Gives the button the appearance that it has been activated.</Description>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Shortcut>b4Alert</Shortcut>
+      <Shortcut>b4ButtonToggle</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal>
           <ID>selector</ID>
-          <ToolTip>Selector of alert elements</ToolTip>
-          <Default><![CDATA[.alert]]></Default>
+          <ToolTip>Button selector</ToolTip>
+          <Default><![CDATA[#accept]]></Default>
         </Literal>
       </Declarations>
       <Code Language="JavaScript" Delimiter="%">
-        <![CDATA[$('%selector%').alert()%end%]]>
+        <![CDATA[$('%selector%').button('toggle')%end%]]>
       </Code>
     </Snippet>
   </CodeSnippet>
