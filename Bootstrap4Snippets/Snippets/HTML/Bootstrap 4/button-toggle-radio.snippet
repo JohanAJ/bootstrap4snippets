@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Button Toggle Radio</Title>
+      <Author>Johan Visagie</Author>
+      <Description>A Bootstrap radio button toggle group.</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Shortcut>b4-button-toggle-radio</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Radio button group name</ToolTip>
+          <Default><![CDATA[options]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option1id</ID>
+          <ToolTip>Radio button id</ToolTip>
+          <Default><![CDATA[option1]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option1</ID>
+          <ToolTip>First option</ToolTip>
+          <Default><![CDATA[Yes]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option2id</ID>
+          <ToolTip>Radio button id</ToolTip>
+          <Default><![CDATA[option2]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option2</ID>
+          <ToolTip>Second option</ToolTip>
+          <Default><![CDATA[No]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option3id</ID>
+          <ToolTip>Radio button id</ToolTip>
+          <Default><![CDATA[option3]]></Default>
+        </Literal>
+        <Literal>
+          <ID>option3</ID>
+          <ToolTip>Third option</ToolTip>
+          <Default><![CDATA[Maybe]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML">
+        <![CDATA[<div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="$name$" id="$option1id$" autocomplete="off" checked> $option1$
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="$name$" id="$option2id$" autocomplete="off"> $option2$
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="$name$" id="$option3id$" autocomplete="off"> $option3$
+  </label>
+</div>$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
