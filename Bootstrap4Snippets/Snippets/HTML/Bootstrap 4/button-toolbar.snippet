@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Button Toolbar</Title>
+      <Author>Johan Visagie</Author>
+      <Description>A combination of button groups creating a toolbar for more complex components.</Description>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Shortcut>b4-button-toolbar</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>toolbarlabel</ID>
+          <ToolTip>Label for the toolbar</ToolTip>
+          <Default><![CDATA[Photo manipulation toolbar]]></Default>
+        </Literal>
+      </Declarations>
+      <Declarations>
+        <Literal>
+          <ID>firstgroup</ID>
+          <ToolTip>Label for the group of actions</ToolTip>
+          <Default><![CDATA[Image tools]]></Default>
+        </Literal>
+      </Declarations>
+      <Declarations>
+        <Literal>
+          <ID>actionone</ID>
+          <ToolTip>Content of first action</ToolTip>
+          <Default><![CDATA[Rotate Left]]></Default>
+        </Literal>
+      </Declarations>
+      <Declarations>
+        <Literal>
+          <ID>actiontwo</ID>
+          <ToolTip>Content of second action</ToolTip>
+          <Default><![CDATA[Rotate Right]]></Default>
+        </Literal>
+      </Declarations>
+      <Declarations>
+        <Literal>
+          <ID>secondgroup</ID>
+          <ToolTip>Label for the group of actions</ToolTip>
+          <Default><![CDATA[Action History]]></Default>
+        </Literal>
+      </Declarations>
+      <Declarations>
+        <Literal>
+          <ID>actionthree</ID>
+          <ToolTip>Content of third action</ToolTip>
+          <Default><![CDATA[Undo]]></Default>
+        </Literal>
+      </Declarations>
+      <Code Language="HTML">
+        <![CDATA[<div class="btn-toolbar" role="toolbar" aria-label="$toolbarlabel$">
+  <div class="btn-group mr-2" role="group" aria-label="$firstgroup$">
+    <button type="button" class="btn btn-secondary">$actionone$</button>
+    <button type="button" class="btn btn-secondary">$actiontwo$</button>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="$secondgroup$">
+    <button type="button" class="btn btn-secondary">$actionthree$</button>
+  </div>
+</div>$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
